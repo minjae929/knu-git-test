@@ -20,10 +20,13 @@ double Circle::bigArea() {
 
 int main() {
 	Circle donut_two;
-	donut_two.innerRadius = 1;
+
+	cout << "innerRadius = ";
+	cin >> donut_two.innerRadius;
 	double area = donut_two.getArea();
 
-	donut_two.outerRadius = 3;
+	cout << "outerRadius = ";
+	cin >> donut_two.outerRadius;
 	double biggerArea = donut_two.bigArea();
 
 	cout << "donut 면적은 " << biggerArea - area << endl;
